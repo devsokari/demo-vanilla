@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+* {
+    font-size: 16px;
+    font-family:'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg-img {
+    /* The image used */
+    background-image: url("../img/cup-small.png");
+  
+    min-height: 70vh;
+  
+    /* Center and scale the image nicely */
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    /* Needed to position the navbar */
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    left: 0;
+    margin: 0;
+    background-color: #fff;
+    height: 12%;
+    cursor: pointer;
+}
+
+.logo-spinr {
+    float: right;
+    position: absolute;
+    cursor: pointer;
+    margin: 0 1px 0 0;
+    height: 30px;
+    width: 30px;
+    right: 0;
+    background-color: #3C1361;
+}
+
+.logo-spinr:hover {
+    background-color: #8965a9;
+}
+  
+  /* Position the navbar container inside the image */
+.container {
+    position: absolute;
+    margin: 0 ;
+    right: 31px;
+    width: auto;
+}
+
+/* The navbar */
+.topnav {
+    display: flex;
+    justify-items: right;
+    align-items: center;
+    overflow: hidden;
+    padding: 0 5px;
+    margin: 0;
+    background-color: #3C1361;
+}
+
+/* Navbar links */
+.topnav a {
+    color: #f2f2f2;
+    text-align: right;
+    padding: 1px;
+    margin: .2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.topnav a:hover {
+    background-color: #8965a9;
+    
+}
+
+.topnav a:active {
+    background-color: rgb(152, 95, 201);
+    color: red;
+}
+
+.header {
+    background: rgba(0, 0, 0, .2);
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: greenyellow;
+    grid-template-rows: 
+        "services"
+        "org-ethos"
+        "the-team"
+        "ceo";
+    width: 100vw;
+}
+
+.services {
+    grid-area: services;
+    height: 30vh;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.services .rt {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+        ". a b ."
+        ". c d .";
+    gap: 0;
+}
+
+.ctr-box > h3 {
+    color: #F7AD75;
+    font-size: 2em;
+}
+
+.ctr-box > p {
+    font-size: .5em;
+}
+
+#bx-1 {
+    grid-area: a;
+}
+
+#bx-2 {
+    grid-area: b;
+}
+
+#bx-3 {
+    grid-area: c;
+}
+
+#bx-4 {
+    grid-area: d;
+}
+
+.org-ethos {
+    min-height: 50vh;
+    grid-area: org-ethos;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+}
+
+.core-vals {
+    background: url(../img/balcony.png) no-repeat center;
+}
+
+.our-mission {
+    background: url(../img/radiator.png) no-repeat center;
+}
+
+.our-vision {
+    background: url(../img/our-vision-img.png) no-repeat center;
+}
+
+.core-vals-cover, .mission-cover, .vision-cover {
+    background-color: rgba(152, 95, 201, .50);
+    height: 100%;
+}
+
+.the-team {
+    grid-area: the-team;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
+    background-color: #8965a9;
+}
+
+.ceo {
+    grid-area: ceo;
+    min-height: 30vh;
+    background-color: #F96D0B;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+
+}
+
+.footer {
+    height: 35vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: #fff;
+    background-color: #3C1361;
+}
+
+.footer .ftr-lft {
+    border-right: #eee .5px solid;
+}
+
+.footer .ftr-lft .logo {
+    position: relative;
+    height: 2em;
+    margin: .5em .2em;
+}
+
+.box {
+    margin: 1em .5em;
+    display: inline-block;
+}
+  
+  .box a i {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+  }
+  
+  .box a {
+    color: #F7AD75;
+  }
+
+  .ftr-rt {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+  }

@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+* {
+    font-size: 16px;
+    font-family:'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.blog-main {
+    min-height: 70vh;
+    display: grid;
+    grid-template-columns: 3fr 5fr;
+}
+
+.blog-left, .blog-right {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.blog-left-content {
+    width: auto;
+}
+
+.blog-pic {
+    width: 100%;
+}
+
+.desc-top {
+    background-color: rgba(255, 255, 255, .85);
+}
+
+.logo {
+    left: 0;
+    margin: 0;
+    background-color: #fff;
+    height: 100%;
+    cursor: pointer;
+}
+
+.logo-bag {
+    height: 3em;
+    left: 0;
+    margin: 0;
+    position: absolute;
+}
+
+.logo-spinr {
+    cursor: pointer;
+    margin: 0 1px 0 0;
+    height: 100%;
+    background-color: #3C1361;
+}
+
+.logo-spinr:hover {
+    background-color: #8965a9;
+}
+
+/* The navbar */
+.top-bar {
+    display: flex;
+    justify-content: flex-end;
+    height: 3em;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* Navbar links */
+.top-bar a {
+    color: #fff;
+    padding: 1px;
+    margin: .2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.menu-bag {
+    height: 100%;
+}
+
+.nav-items {
+    display: flex;
+    background-color: #3C1361;
+    height: 100%;
+    align-items: center;
+}
+
+.nav-items a:hover {
+    background-color: #8965a9;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 
+        "footer";
+}
+
+/* Footer section */
+.footer {
+    grid-area: footer;
+    height: 30vh;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    color: #fff;
+    background-color: #3C1361;
+}
+
+.footer .logo {
+    position: relative;
+    height: 2em;
+    margin: .5em .2em;
+}
+
+.box {
+    margin: 1em .5em;
+    display: inline-block;
+}
+  
+.box a i {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+}
+  
+  .box a {
+    color: #F7AD75;
+  }
+
+  .ftr-rt {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
