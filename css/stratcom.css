@@ -24,6 +24,11 @@
     position: relative;
 }
 
+.bg-img-inner {
+    height: 100%;
+    background-color: rgba(255, 255, 255, .85);
+}
+
 .logo {
     position: absolute;
     left: 0;
@@ -79,7 +84,6 @@
 
 .topnav a:hover {
     background-color: #8965a9;
-    
 }
 
 .topnav a:active {
@@ -98,7 +102,7 @@
     grid-template-rows: 
         "feature"
         "services"
-        "bloc"
+        "blog"
         "footer";
     width: auto;
 }
@@ -108,44 +112,41 @@
     min-height: 20vh;
 }
 
+.feature-inner, p, h5 {
+    padding: .2em;
+    color: #3C1361;
+}
+
+.caption {
+    padding: 1em .5em;
+    margin: 1em 0;
+    font-size: .7em;
+}
+
 .services {
-    grid-row: services;
-    min-height: 80vh;
+    grid-area: services;
+    min-height: 50vh;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas:
-        ". i j ."
-        ". k l .";
-    gap: 0;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
-#item-1 {
-    grid-area: i;
+.grid-pic {
+    width: 100%;
 }
 
-#item-2 {
-    grid-area: j;
-}
-
-#item-3 {
-    grid-area: k;
-}
-
-#item-4 {
-    grid-area: l;
-}
-
-.bloc {
-    grid-row: bloc;
+.blog {
+    grid-row: blog;
     min-height: 60vh;
 }
 
-.bloc-innr {
+.blog-inner {
     height: 50vh;
     display: grid;
     grid-template-columns: 2fr 1fr;
+    align-items: center;
 }
+
 
 .footer {
     grid-row: footer;
@@ -157,7 +158,7 @@
 }
 
 .footer .ftr-lft {
-    border-right: #eee .5px solid;
+    border-right: #eee .1px solid;
 }
 
 .footer .ftr-lft .logo {
@@ -171,19 +172,18 @@
     display: inline-block;
 }
   
-  .box a i {
+.box a i {
     width: 50px;
     height: 50px;
     border-radius: 50%;
     text-align: center;
-  }
+}
   
-  .box a {
+.box a {
     color: #F7AD75;
-  }
+}
 
-  .ftr-rt {
+.ftr-rt {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-
-  }
+}
