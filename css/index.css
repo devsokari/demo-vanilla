@@ -1,21 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-/* animations */
-@keyframes menuslide {
-    from {
-        transform: translateX(-100px);
-    }
-
-    to {
-        transform: translateX(0);
-    }
-}
-
-.topnav {
-    animation: menuslide .3s ease-in-out 0s 1 normal normal;
-}
-/* end animations */
-
 * {
     font-size: 16px;
     font-family:'Roboto', sans-serif;

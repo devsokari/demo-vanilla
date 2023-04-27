@@ -50,10 +50,13 @@ a {
     width: 30px;
     right: 0;
     background-color: #3C1361;
+
+    transition: transform .3s;
 }
 
 .logo-spinr:hover {
     background-color: #8965a9;
+    transform: translateY(-.1em);
 }
   
   /* Position the navbar container inside the image */
@@ -66,7 +69,7 @@ a {
 
 /* The navbar */
 .topnav {
-    display: flex;
+    display: none;
     justify-items: right;
     align-items: center;
     overflow: hidden;
