@@ -9,6 +9,10 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
 .bg-img {
     /* The image used */
     background-image: url("../img/meeting-25-percent.png");
@@ -98,13 +102,11 @@
 .main {
     display: grid;
     grid-template-columns:1fr 2fr 1fr;
-    background-color: greenyellow;
     grid-template-rows: 
         "feature"
         "services"
         "blog"
         "footer";
-    width: auto;
 }
 
 .feature {
@@ -135,6 +137,38 @@
     width: 100%;
 }
 
+#grid-box-2 {
+    background: url('../img/rectangle.png') no-repeat center center;
+}
+
+.grid-2-inner {
+    background-color: rgba(253, 117, 17, .55);
+    height: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.grid-3-inner {
+    background-color: rgba(60, 19, 97, .55);
+    height: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#grid-box-3 {
+    background: url('../img/graph.png') no-repeat center center;
+    background-color: #fff;
+}
+
+.grid-2-inner  a, h6 {
+    color: #fff;
+    padding: 0.2em .5em;
+}
+
 .blog {
     grid-row: blog;
     min-height: 60vh;
@@ -145,6 +179,11 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     align-items: center;
+}
+
+.blog-inner-left {
+    display: flex;
+    flex-direction: column;
 }
 
 
