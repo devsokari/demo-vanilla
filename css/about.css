@@ -105,9 +105,18 @@
 
 .services {
     grid-area: services;
-    height: 30vh;
+    min-height: 30vh;
     display: grid;
     grid-template-columns: 2fr 1fr;
+}
+
+.services .left h5 {
+    padding: 1em .5em;
+}
+
+.services .left p {
+    padding: 1em .5em;
+    line-height: 1.2em;
 }
 
 .services .rt {
@@ -118,6 +127,8 @@
         ". a b ."
         ". c d .";
     gap: 0;
+    justify-content: center;
+    align-items: center;
 }
 
 .ctr-box > h3 {
