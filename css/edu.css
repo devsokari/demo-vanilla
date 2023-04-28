@@ -58,6 +58,25 @@ a {
     background-color: #8965a9;
     transform: translateY(-.1em);
 }
+
+#menu-spinner-on {
+    display: none;
+    float: right;
+    position: absolute;
+    cursor: pointer;
+    margin: 0 1px 0 0;
+    height: 30px;
+    width: 30px;
+    right: 0;
+    background-color: #3C1361;
+
+    transition: transform .3s;
+}
+
+#menu-spinner-on:hover {
+    background-color: #8965a9;
+    transform: translateY(-.05em);
+}
   
   /* Position the navbar container inside the image */
 .container {
