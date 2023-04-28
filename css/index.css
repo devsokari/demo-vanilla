@@ -76,6 +76,19 @@
     width: auto;
 }
 
+.topdiv {
+    height: 70vh;
+    width: 100%;
+    background-color: rgba(137, 101, 169, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-img {
+    width: 50%;
+}
+
 /* The navbar */
 .topnav {
     display: none;
@@ -125,7 +138,6 @@
 .services {
     grid-area: services;
     height: 50vh;
-    width: 100vw;
     background: url(../img/h3-img-2.jpg) no-repeat center center fixed;
 }
 
