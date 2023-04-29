@@ -9,18 +9,10 @@
     box-sizing: border-box;
 }
 
-a {
-    text-decoration: none;
-}
-
-.arrow {
-    height: 1em;
-    width: 1em;
-}
-
 .bg-img {
     /* The image used */
     background-image: url("../img/edu-bkg-small.png");
+  
     min-height: 70vh;
   
     /* Center and scale the image nicely */
@@ -42,12 +34,11 @@ a {
 }
 
 .logo-spinr {
-    float: right;
     position: absolute;
     cursor: pointer;
     margin: 0 1px 0 0;
-    height: 30px;
-    width: 30px;
+    height: 35px;
+    width: 35px;
     right: 0;
     background-color: #3C1361;
 
@@ -59,56 +50,88 @@ a {
     transform: translateY(-.1em);
 }
 
-#menu-spinner-on {
-    display: none;
-    float: right;
-    position: absolute;
-    cursor: pointer;
-    margin: 0 1px 0 0;
-    height: 30px;
-    width: 30px;
-    right: 0;
-    background-color: #3C1361;
-
-    transition: transform .3s;
-}
-
 #menu-spinner-on:hover {
     background-color: #8965a9;
     transform: translateY(-.05em);
 }
   
   /* Position the navbar container inside the image */
-.container {
-    position: absolute;
-    margin: 0 ;
-    right: 31px;
-    width: auto;
+
+.topdiv {
+    height: 70vh;
+    width: 100%;
+    background-color: rgba(137, 101, 169, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-img {
+    width: 50%;
 }
 
 /* The navbar */
 .topnav {
-    display: none;
-    justify-items: right;
+    position: absolute;
+    right: 31px;
+    height: 35px;
+    display: flex;
+    justify-content: space-evenly;
     align-items: center;
-    overflow: hidden;
-    padding: 0 5px;
-    margin: 0;
+    width: 25vw;
+
     background-color: #3C1361;
 }
 
-/* Navbar links */
-.topnav a {
-    color: #f2f2f2;
-    text-align: right;
-    padding: 1px;
-    margin: .2rem;
+.topnav ul {
+    list-style: none;
+}
+
+.topnav ul li {
     text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+
+.topnav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: .2em;
+    font-size: 1em;
+    display: block;
     text-transform: uppercase;
 }
 
-.topnav a:hover {
-    background-color: #8965a9;
+.expertise-sub {
+    display: none;
+} 
+
+.top-nav-ul li ul.industries-sub, .top-nav-ul li ul.expertise-sub {
+    width: 170%;
+    margin: .1em 0;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    background-color: rgba(91, 21, 152, 0.85);
+}
+
+.top-nav-ul li ul.industries-sub li, .top-nav-ul li ul.expertise-sub li  {
+    display: block;
+}
+
+.top-nav-ul li:hover ul.industries-sub, .top-nav-ul li:hover ul.expertise-sub {
+    display: block;
+}
+
+.top-nav-ul li:hover ul.industries-sub a, .top-nav-ul li:hover ul.expertise-sub a {
+    font-size: 1em;
+    margin: .1em 0;
+    padding: 0.1em .3em;
+}
+
+.active, .topnav ul li:hover {
+    background: #8965a9;
+    border-radius: 1px;
 }
 
 .main {
@@ -197,6 +220,10 @@ a {
     margin: .5em .5em;
 }
 
+.footer .ftr-lft p {
+    color: #fff;
+}
+
 .box {
     margin: 1em .5em;
     display: inline-block;
@@ -216,4 +243,9 @@ a {
 .ftr-rt {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    color: #fff;
+}
+
+.npdv, .faq, .sub {
+    margin: .2em 0;
 }
