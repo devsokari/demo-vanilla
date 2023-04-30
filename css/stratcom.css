@@ -36,6 +36,7 @@
 .logo-spinr {
     position: absolute;
     cursor: pointer;
+    z-index: 1000;
     margin: 0 1px 0 0;
     height: 35px;
     width: 35px;
@@ -73,12 +74,13 @@
 /* The navbar */
 .topnav {
     position: absolute;
+    display: none;
     right: 31px;
     height: 35px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 25vw;
+    min-width: 25vw;
 
     background-color: #3C1361;
 }
@@ -174,8 +176,13 @@
     grid-template-rows: 1fr 1fr;
 }
 
+.grid-item {
+    height: 100%;
+}
+
 .grid-pic {
     width: 100%;
+    height: 100%;
 }
 
 #grid-box-2 {
@@ -242,8 +249,8 @@
     background-color: #3C1361;
 }
 
-.footer .ftr-lft .logo {
-    position: relative;
+.footer-logo {
+    background-color: #fff;
     height: 2em;
     margin: .5em .2em;
 }
@@ -279,4 +286,120 @@
 
 .npdv, .faq, .sub {
     margin: .2em 0;
+}
+
+.socials {
+    display: none;
+}
+
+/* Media query */
+
+@media (max-width: 685px) {
+    .topnav {
+        display: none;
+        flex-direction: column;
+        right: .1%;
+        top: 0px;
+        width: 150px;
+        height: 29vh;
+        justify-content: flex-start;
+        transition: all .3s ease;
+    }
+
+    .top-nav-ul li a {
+        display: block;
+        margin: 12px 0;
+        padding: 0px 25px;
+    }
+
+    .active, .topnav ul li:hover {
+        background: #8965a9;
+        border-radius: 1px;
+    }
+
+    .services {
+        min-height: 100vh;
+    }
+
+    .serv-innr {
+        display: grid;
+        grid-template-columns: 2fr;
+        grid-template-rows: 1fr 1fr;
+        background-color: rgba(255, 255, 255, .85);
+        height: 100%;
+        padding-left: .5em;
+    }
+
+    .blog {
+        grid-template-columns: 1fr;
+        height: 70vh;
+    }
+
+    .profile {
+        height: 100%;
+    }
+
+    #prof-2, #prof-3 {
+        display: none;
+    }
+
+    .newsletter {
+        flex-direction: column;
+        min-height: 15vh;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 60vh;
+        background-color: #fff;
+        padding-left: .5em;
+    }
+
+    .contact-rt {
+        border-bottom: #FD6A03 1px solid;
+    }
+
+    .name-grp {
+        margin-right: .2em;
+    }
+
+    /* footer */
+    .footer {
+        min-height: 120vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ftr-lft {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ftr-rt {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-text {
+        font-size: 2em;
+    }
+
+    .socials-main {
+        display: none;
+    }
+
+    .socials {
+        display: block;
+    }
+
+    .footer-logo {
+        height: 70px;
+    }
 }
