@@ -9,18 +9,18 @@
     box-sizing: border-box;
 }
 
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
 .bg-img {
     /* The image used */
     background-image: url("../img/meeting-25-percent.png");
   
     min-height: 70vh;
-  
-    /* Center and scale the image nicely */
-    /* background-position: center; */
     background-repeat: no-repeat;
     background-size: cover;
-  
-    /* Needed to position the navbar */
     position: relative;
 }
 
@@ -29,18 +29,14 @@
     left: 0;
     margin: 0;
     background-color: #fff;
-    height: 12%;
     cursor: pointer;
 }
 
 .logo-spinr {
     position: absolute;
     cursor: pointer;
-    z-index: 1000;
-    margin: 0 1px 0 0;
-    height: 35px;
-    width: 35px;
     right: 0;
+    z-index: 1000;
     background-color: #3C1361;
 
     transition: transform .3s;
@@ -51,9 +47,15 @@
     transform: translateY(-.1em);
 }
 
+
+
 #menu-spinner-on:hover {
     background-color: #8965a9;
     transform: translateY(-.05em);
+}
+
+#menu-spinner-on {
+    display: none;
 }
   
   /* Position the navbar container inside the image */
@@ -61,26 +63,25 @@
 .topdiv {
     height: 70vh;
     width: 100%;
-    background-color: rgba(137, 101, 169, .5);
+    background-color: rgba(137, 101, 169, .3);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .banner-img {
-    width: 50%;
+    width: 80%;
 }
 
 /* The navbar */
 .topnav {
-    position: absolute;
     display: none;
+    position: absolute;
     right: 31px;
-    height: 35px;
-    display: flex;
-    justify-content: space-evenly;
+    height: 43px;
+    justify-content: space-around;
     align-items: center;
-    min-width: 25vw;
+    min-width: 35vw;
 
     background-color: #3C1361;
 }
@@ -154,6 +155,23 @@
     grid-row: feature;
     min-height: 20vh;
     color: #3C1361;
+
+    padding: 2em 4em;
+    width: 80vw;
+}
+
+.sub-title {
+    padding: 1em 0;
+    color: #3C1361;
+    text-transform: uppercase;
+    font-size: xx-small;
+}
+
+.sub-title-desc {
+    padding: 1em 0;
+    font-size: larger;
+    color: #3C1361;
+
 }
 
 .feature-inner, p, h5 {
@@ -187,6 +205,7 @@
 
 #grid-box-2 {
     background: url('../img/rectangle.png') no-repeat center center;
+    
 }
 
 .grid-2-inner {
@@ -196,15 +215,18 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    padding: 1em 4em;
 }
 
 .grid-3-inner {
-    background-color: rgba(60, 19, 97, .55);
+    background-color: rgba(60, 19, 97, .9);
     height: 100%;
     color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    padding: 1em 4em;
 }
 
 .grid-3-inner h6 a {
@@ -222,37 +244,53 @@
     padding: 0.2em .5em;
 }
 
+
+
+.arrow-link {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    color: #fff;
+    margin-left: 1em;
+}
+
+/* blog section */
+
 .blog {
     grid-row: blog;
-    min-height: 60vh;
+    min-height: 70vh;
+    background: url(../img/edu-serv-bkg.png) no-repeat center center fixed;
 }
 
 .blog-inner {
-    height: 50vh;
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgba(255, 255, 255, .85);
+    padding: 2em 4em;
 }
 
 .blog-inner-left {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
 }
 
 
 .footer {
-    grid-row: footer;
-    height: 40vh;
+    height: 35vh;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 2fr 1fr;
     color: #fff;
     background-color: #3C1361;
 }
 
 .footer-logo {
     background-color: #fff;
-    height: 2em;
-    margin: .5em .2em;
+    margin-bottom: .5em;
+}
+
+.footer .ftr-lft p {
+    color: #fff;
 }
 
 .box {
@@ -271,17 +309,22 @@
     color: #F7AD75;
 }
 
-.footer .ftr-lft p {
-    color: #fff;
+.ftr-lft {
+    margin: 1em 2em;
 }
-
 .ftr-rt {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    color: #fff;
+    padding: 1em 1.5em;
 }
 
-.footer .ftr-rt p {
-    color: #fff;
+.npdv a p, .faq a p {
+    padding: .2em 0;
+}
+
+.header-text {
+    font-size: larger;
 }
 
 .npdv, .faq, .sub {

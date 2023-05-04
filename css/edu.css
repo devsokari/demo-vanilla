@@ -73,7 +73,7 @@ a {
 }
 
 .banner-img {
-    width: 50%;
+    width: 80%;
 }
 
 /* The navbar */
@@ -151,7 +151,7 @@ a {
 }
 
 .services {
-    height: 70vh;
+    min-height: 90vh;
     width: auto;
     background: url(../img/edu-serv-bkg.png) no-repeat center center fixed;
 }
@@ -166,32 +166,67 @@ a {
     grid-template-columns: 2fr 1fr;
     background-color: rgba(255, 255, 255, .85);
     height: 100%;
+
+    padding: 2em 4em;
 }
+
+.arrow-link {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    color: #fff;
+    margin-left: 1em;
+}
+
+/* blog section */
 
 .blog {
-    height: 90vh;
+    grid-area: blog;
+    min-height: auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 2fr 1fr;
-    gap: .1em;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* background-image: linear-gradient(to right, #FD6A03 , #F7AD75); */
+    column-gap: 0;
+    padding: 0;
+    margin: 0;
+    gap: 5px;
 }
 
-.left {
+.profile {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.desc {
+    padding: 1em 2em;
+    min-height: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
-.rt {
-    display: flex;
-    align-items: center;
+.desc h5 {
+    margin-bottom: 1em;
 }
 
-.profile p, h4 {
-    padding: .2em .5em;
+.desc .article-date {
+    font-size: xx-small;
+    margin-bottom: 2em;
+}
+
+.desc a {
+    color: #3C1361;
+}
+
+.picture {
+    margin: 0;
+    width: 100%;
+    height: 50%;
 }
 
 .prof-img {
+    height: 100%;
     width: 100%;
 }
 
@@ -213,24 +248,16 @@ a {
 }
 
 .footer {
-    grid-area: footer;
     height: 35vh;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 2fr 1fr;
     color: #fff;
     background-color: #3C1361;
 }
 
 .footer-logo {
     background-color: #fff;
-    height: 2em;
-    margin: .5em .2em;
-}
-
-.footer .ftr-lft .logo {
-    position: relative;
-    height: 2em;
-    margin: .5em .5em;
+    margin-bottom: .5em;
 }
 
 .footer .ftr-lft p {
@@ -253,10 +280,22 @@ a {
     color: #F7AD75;
 }
 
+.ftr-lft {
+    margin: 1em 2em;
+}
 .ftr-rt {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     color: #fff;
+    padding: 1em 1.5em;
+}
+
+.npdv a p, .faq a p {
+    padding: .2em 0;
+}
+
+.header-text {
+    font-size: larger;
 }
 
 .npdv, .faq, .sub {

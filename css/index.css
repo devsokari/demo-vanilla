@@ -213,7 +213,6 @@ a {
 }
 
 /* blog section */
-
 .blog {
     grid-area: blog;
     min-height: auto;
@@ -377,6 +376,7 @@ textarea:focus {
 .ftr-lft {
     margin: 1em 2em;
 }
+
 .ftr-rt {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
