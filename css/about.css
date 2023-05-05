@@ -1,9 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway:wght@300&family=Roboto&display=swap');
 
 * {
     font-size: 16px;
-    font-family:'Roboto', sans-serif;
+    font-family:'Playfair Display', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -348,6 +347,20 @@ a {
 
 .footer .ftr-lft p {
     color: #fff;
+    font-family: 'Raleway';
+}
+
+.footer-link {
+    font-family: 'Raleway';
+}
+
+.npdv a p, .faq a p {
+    padding: .2em 0;
+}
+
+.header-text {
+    font-size: larger;
+    font-family: 'Raleway';
 }
 
 .box {
