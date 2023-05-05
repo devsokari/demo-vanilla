@@ -479,10 +479,10 @@ a {
 
     /* footer */
     .footer {
-        min-height: 120vh;
+        min-height: 80vh;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
     }
 
@@ -491,6 +491,7 @@ a {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 0 1em;
     }
 
     .ftr-rt {
@@ -501,7 +502,7 @@ a {
     }
 
     .header-text {
-        font-size: 2em;
+        font-size: ;
     }
 
     .socials-main {
@@ -513,6 +514,10 @@ a {
     }
 
     .footer-logo {
-        height: 70px;
+        margin: 2em 0;
+    }
+
+    .faq {
+        margin-top: 2em;
     }
 }
