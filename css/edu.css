@@ -34,18 +34,14 @@ a {
     left: 0;
     margin: 0;
     background-color: #fff;
-    height: 12%;
     cursor: pointer;
 }
 
 .logo-spinr {
     position: absolute;
     cursor: pointer;
-    z-index: 1000;
-    margin: 0 1px 0 0;
-    height: 35px;
-    width: 35px;
     right: 0;
+    z-index: 1000;
     background-color: #3C1361;
 
     transition: transform .3s;
@@ -56,9 +52,15 @@ a {
     transform: translateY(-.1em);
 }
 
+
+
 #menu-spinner-on:hover {
     background-color: #8965a9;
     transform: translateY(-.05em);
+}
+
+#menu-spinner-on {
+    display: none;
 }
   
   /* Position the navbar container inside the image */
@@ -78,14 +80,13 @@ a {
 
 /* The navbar */
 .topnav {
-    position: absolute;
     display: none;
+    position: absolute;
     right: 31px;
-    height: 35px;
-    display: flex;
-    justify-content: space-evenly;
+    height: 43px;
+    justify-content: space-around;
     align-items: center;
-    min-width: 25vw;
+    min-width: 35vw;
 
     background-color: #3C1361;
 }
